@@ -10,7 +10,11 @@ export const GitGrid = ({ category }) => {
     return (
         <>
 
-            { loading && 'Cargando'}
+            <div className="loading">
+                {
+                loading && 'Cargando'
+                }
+            </div>
 
             <div className="car-grid">
             

@@ -18,3 +18,18 @@ body {
     margin-right: 10px;
     overflow: hidden;
 }
+
+.text{
+    color: purple;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.loading {
+    background-color: rgb(32, 94, 32);
+    color: white;
+    text-align: center;
+    width: 30%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}

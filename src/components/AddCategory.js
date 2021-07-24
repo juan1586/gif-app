@@ -16,11 +16,13 @@ export const AddCategory = ( {setCategories} ) => {
 
     return (
         <form onSubmit = { hadleSubmit}> 
-            <p> { imputValue } </p>
+            {/* <p> { imputValue } </p> */}
             <input 
                 type="text"
+                placeholder="Buscar gif"
                 value= {imputValue}
                 onChange = {handleInputChange}
+                className="form-control form-control-sm"
             />
         </form>
     )

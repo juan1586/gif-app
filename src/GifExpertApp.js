@@ -5,22 +5,17 @@ import { GitGrid } from './components/GitGrid';
 
 export const GifExpertApp = (setCategory) => {
 
-  // const categories = ['uno', 'dos', 'tres'];
 
-   const [categories, setCategories] = useState(['goku']);
-
-  // const handleAdd = () =>{
-  //   //setCategories(cats =>[ ...cats, 'Una más' ]);
-  // }
+  const [categories, setCategories] = useState(['goku']);
 
   return (
       <>
-        <h2>GifExpert App</h2>
+        <h2 className="text">GifApp Melito Caramelito</h2>
         <AddCategory setCategories = { setCategories }/>
         <hr></hr>  
           {
             categories.map( (cat ) =>{
-              return <p key ={ cat }> <GitGrid category={cat}/></p>
+              return <span key ={ cat }> <GitGrid category={cat}/></span>
             })
           }
       </>
